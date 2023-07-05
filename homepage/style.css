@@ -63,6 +63,10 @@ header {
     border-radius: 5px;
 }
 
+.login-btn h2 {
+    color: white;
+}
+
 .login-btn button a {
     text-decoration: none;
     color: black;
