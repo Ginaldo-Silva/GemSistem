@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <script src="../script.js"></script>
 
     <title>Login</title>
 </head>
@@ -13,11 +14,14 @@
         <h1>Login</h1>
         <div class="text_field_content">
             <h2>Matricula:</h2>
-            <input type="text">
+            <input type="text" id="mastricula" required>
         </div>
         <div class="text_field_content">
             <h2>Senha:</h2>
-            <input type="text">
+            <div class="pass-container">
+                <input type="password" id="password" required>
+                <button onclick="togglePasswordVisibility()"></button>
+            </div>
         </div>
         <div class="btn">
             <input type="submit" value="Entrar">

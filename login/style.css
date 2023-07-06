@@ -31,10 +31,13 @@ body {
     background-color: white;
     border-radius: 10px;
     width: 400px;
-    height: 400px;
+    height: 450px;
+
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.577);
 }
 
 .center > h1 {
+    font-size: 3em;
     color: black;
 }
 
@@ -51,6 +54,30 @@ body {
     margin-bottom: 10px;
 }
 
+.pass-container {
+    display: flex;
+    align-items: center;
+}
+
+.pass-container > input{
+    flex: 1;
+    font-size: 1.5em;
+    height: 30px;
+    width: 315px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid rgb(114, 114, 114);
+}
+
+.pass-container > button {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
 .text_field_content > input {
     font-size: 1.5em;
     height: 30px;
@@ -63,9 +90,18 @@ body {
     border-bottom: 2px solid rgb(114, 114, 114);
 }
 
+.text_field_content > input:hover {
+    height: 45px;
+    width: 320px;
+    border: 2px solid rgb(114, 114, 114);
+    border-radius: 15px;
+}
+
 .text_field_content > input:focus {
     font-size: 2em;
     height: 45px;
+    width: 320px;
+    border-radius: 15px;
 }
 
 .btn {
