@@ -72,14 +72,14 @@ div.plate-container > input {
 
 div.plate-container > input:hover {
     border: 2px solid rgb(44, 43, 43);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 div.plate-container > input:focus {
     width: 275px;
     height: 35px;
     border: 2px solid rgb(44, 43, 43);
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 2em;
 }
 
@@ -115,15 +115,14 @@ div.pass-input > input {
 
 div.pass-input > input:hover {
     border: 2px solid rgb(44, 43, 43);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 div.pass-input > input:focus {
     width: 230px;
     height: 35px;
     border: 2px solid rgb(44, 43, 43);
-    border-radius: 15px;
-    font-size: 2em;
+    border-radius: 10px;
 }
 
 div.pass-input > button {
