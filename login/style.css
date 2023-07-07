@@ -36,6 +36,10 @@ body {
     box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.577);
 }
 
+div.center-top {
+    background-image: linear-gradient(top bottom, #069235, #05A40B);
+}
+
 .center > h1 {
     font-size: 3em;
     color: black;
