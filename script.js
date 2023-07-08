@@ -13,7 +13,6 @@ function togglePasswordVisibility() {
 
   imgElement.setAttribute('src', newImage);
 
-  imgElement.setAttribute('src', newImage);
   var passwordInput = document.getElementById("password");
   if (passwordInput.type === "password") {
     passwordInput.type = "text";

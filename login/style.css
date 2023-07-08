@@ -1,135 +1,122 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:wght@400;500;700;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    font-family: 'inter', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --color01: #061366;
-    --color02: #0E2BE6;
-    --color03: #5468EA;
-
+    --font01: 'Robot', sans-serif;
+    --font02: Verdana, Geneva, Tahoma, sans-serif;
+    --font03: 'Inter', sans-serif;
 }
 
-body {
-    position: relative;
-    height: 98vh;
+* {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(60, 59, 59);
+    font-size: 1em;
 }
 
-.center {
+html, body {
+    position: relative;
+    background-color: rgb(12, 9, 24);
+    min-height: 98vh;
+    font-family: var(--font02);
+}
+
+div.center {
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    background-color: white;
+    width: 400px;
+    height: 330px;
+    margin: 0px;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    border-radius: 35px 5px 35px 5px;
 
-    background-color: white;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div.center > h1 {
+    font-variant: small-caps;
+    font-size: 4vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.registration-holder, div.password-holder {
+    display: flex;
+    width: 85%;
+    height: 14%;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+div.registration-holder > img, div.password-holder > img {
+    width: 20px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+div.registration-holder > input, div.password-holder > input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.5em;
+}
+
+
+
+div.password-holder > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 4vh;
+    margin-right: 5px;
+
+    background-color: transparent;
+    border: none;
+}
+
+img#passwordImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.btn-holder {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div.btn-holder > input, div.btn-holder > button {
+    background-color: #06D340;
+    border: none;
     border-radius: 10px;
-    width: 400px;
-    height: 450px;
+    width: 145px;
+    height: 50px;
 
-    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.577);
+    font-family: var(--font03);
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-div.center-top {
-    background-image: linear-gradient(top bottom, #069235, #05A40B);
-}
-
-.center > h1 {
-    font-size: 3em;
+div.btn-holder > button > a {
+    text-decoration: none;
     color: black;
 }
 
-.text_field_content {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: column;
-}
-
-.text_field_content > h2 {
-    width: 150px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.pass-container {
-    display: flex;
-    align-items: center;
-}
-
-.pass-container > input{
-    flex: 1;
-    font-size: 1.5em;
-    height: 30px;
-    width: 315px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: 2px solid rgb(114, 114, 114);
-}
-
-.pass-container > button {
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-}
-
-.text_field_content > input {
-    font-size: 1.5em;
-    height: 30px;
-    width: 315px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: 2px solid rgb(114, 114, 114);
-}
-
-.text_field_content > input:hover {
-    height: 45px;
-    width: 320px;
-    border: 2px solid rgb(114, 114, 114);
-    border-radius: 15px;
-}
-
-.text_field_content > input:focus {
-    font-size: 2em;
-    height: 45px;
-    width: 320px;
-    border-radius: 15px;
-}
-
-.btn {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 25px;
-}
-
-.btn > input {
-    width: 125px;
-    height: 45px;
-    background-color: rgba(116, 116, 116, 0.805);
-    color: white;
-    font-size: 1.5em;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
-.btn > input:hover {
-    width: 135px;
-    height: 55px;
-    background-color: rgba(57, 57, 57, 0.805);
-    color: white;
-    font-size: 1.5em;
-    border-radius: 10px;
-    border: 1px solid black;
+div.btn-holder > input:hover, div.btn-holder > button:hover {
+    background-color: #06D340;
+    width: 160px;
+    height: 65px;
 }
